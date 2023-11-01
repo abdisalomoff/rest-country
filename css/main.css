@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.body {
+    background-color: #e9e9e9;
+}
+
+img {
+    vertical-align: middle;
+}
+
+header {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px -2px;
+}
+
+.header-inner {
+    padding: 22px 0px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    padding: 0;
+}
+
+.card {
+    /* min-width: 250px; */
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 2px 2px 15px 2px;
+    transition: all 300ms ease-in-out 0s;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
