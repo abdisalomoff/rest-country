@@ -29,7 +29,7 @@ function renderCountries(country) {
     const cardCurrency = document.createElement('p');
     cardCurrency.textContent = `Currency: ${Object.keys(country.currencies)[0]}`;
 
-    // console.log(country);    
+    console.log(country);    
     // console.log(country.name.common);
     // console.log(country.population.toString().replace(","));
     // console.log(Object.keys(country.currencies)[0]);
@@ -51,7 +51,7 @@ countries.then((response) => response.json())
         data.forEach(country => {
             renderCountries(country)
         });
-    }).catch((error) => (error))
+    }).catch((error) => (error));
 
 // SEARCH COUNTRY ********
 
